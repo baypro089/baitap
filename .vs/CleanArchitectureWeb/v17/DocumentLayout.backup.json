@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78AC32B2-1A62-42C2-902C-88F8C093EDD4}|Application\\Application.csproj|c:\\users\\magaki\\source\\repos\\cleanarchitectureweb\\application\\profiles\\cataloguemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78AC32B2-1A62-42C2-902C-88F8C093EDD4}|Application\\Application.csproj|solutionrelative:application\\profiles\\cataloguemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2814A026-21C4-452C-A1C6-A26DFE492606}|Infrastructure\\Infrastructure.csproj|c:\\users\\magaki\\source\\repos\\cleanarchitectureweb\\infrastructure\\identity\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2814A026-21C4-452C-A1C6-A26DFE492606}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\identity\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA478399-6A96-4AE1-AAE4-5FF111D4F192}|Domain\\Domain.csproj|c:\\users\\magaki\\source\\repos\\cleanarchitectureweb\\domain\\entities\\bookcatalogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA478399-6A96-4AE1-AAE4-5FF111D4F192}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\bookcatalogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2814A026-21C4-452C-A1C6-A26DFE492606}|Infrastructure\\Infrastructure.csproj|c:\\users\\magaki\\source\\repos\\cleanarchitectureweb\\infrastructure\\data\\configurations\\bookcatalogueconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2814A026-21C4-452C-A1C6-A26DFE492606}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\configurations\\bookcatalogueconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CatalogueMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\Application\\Profiles\\CatalogueMapper.cs",
+              "RelativeDocumentMoniker": "Application\\Profiles\\CatalogueMapper.cs",
+              "ToolTip": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\Application\\Profiles\\CatalogueMapper.cs",
+              "RelativeToolTip": "Application\\Profiles\\CatalogueMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T16:58:39.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\Infrastructure\\Identity\\UserService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Identity\\UserService.cs",
+              "ToolTip": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\Infrastructure\\Identity\\UserService.cs",
+              "RelativeToolTip": "Infrastructure\\Identity\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T16:46:49.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookCatalogueConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\Infrastructure\\Data\\Configurations\\BookCatalogueConfig.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Configurations\\BookCatalogueConfig.cs",
+              "ToolTip": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\Infrastructure\\Data\\Configurations\\BookCatalogueConfig.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Configurations\\BookCatalogueConfig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T16:43:01.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookCatalogue.cs",
+              "DocumentMoniker": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\Domain\\Entities\\BookCatalogue.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\BookCatalogue.cs",
+              "ToolTip": "C:\\Users\\Magaki\\source\\repos\\CleanArchitectureWeb\\Domain\\Entities\\BookCatalogue.cs",
+              "RelativeToolTip": "Domain\\Entities\\BookCatalogue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T16:42:23.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 88,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
