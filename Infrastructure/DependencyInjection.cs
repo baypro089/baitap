@@ -7,40 +7,53 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Data;
+
 namespace Infrastructure
 {
     public static class DependencyInjection
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
+            // Lấy chuỗi kết nối từ cấu hình
             var connectionString = configuration.GetConnectionString("DefaultConnection");
 
             Guard.Against.Null(connectionString, message: "Connection string 'DefaultConnection' not found.");
 
-            services.AddScoped<IAppDbContext>(provider => provider.GetRequiredService<AppDbContext>());
-            services.AddScoped(typeof(IGenericRepository<,>), typeof(GenericRepository<,>));
-            services.AddScoped<IUserService, UserService> ();
-
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-            services.AddDbContext<AppDbContext>((sp, options) =>
+            // Cấu hình DbContext với MySQL
+            services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             });
 
+            // Cấu hình JWT Authentication
             services.AddAuthentication()
-                .AddBearerToken(IdentityConstants.BearerScheme);
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = configuration["JwtSettings:Issuer"],
+                        ValidAudience = configuration["JwtSettings:Audience"],
+                        IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(configuration["JwtSettings:SecretKey"]))
+                    };
+                });
 
-            services.AddAuthorizationBuilder();
+            // Cấu hình Authorization nếu cần
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
+            });
 
-            services
-                .AddIdentityCore<User>()
-                .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<AppDbContext>()
-                .AddApiEndpoints();
-
+            // Thêm các dịch vụ cần thiết
+            services.AddScoped<IAppDbContext>(provider => provider.GetRequiredService<AppDbContext>());
+            services.AddScoped(typeof(IGenericRepository<,>), typeof(GenericRepository<,>));
             services.AddTransient<IUserService, UserService>();
+
+            // Thêm AutoMapper (nếu cần)
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             return services;
         }
